@@ -1,4 +1,5 @@
 import React from 'react';
+import mortar from '%PUBLIC_URL%/images/products/mortar.jpg'
 
 export default function products() {
   return (
@@ -9,81 +10,81 @@ export default function products() {
       <div className="flex flex-wrap -m-4">
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260"></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + "/images/products/mortar.jpg"}></img>
           </a>
           <div className="mt-4">
-            <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-            <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
-            <p className="mt-1">$16.00</p>
+            
+            <h2 className="text-gray-900 title-font text-lg font-medium">Mortar and Pestle</h2>
+            <p className="mt-1">$15.00</p>
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/421x261"></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/toothpic.jpg'}></img>
           </a>
           <div className="mt-4">
-            <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-            <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+            
+            <h2 className="text-gray-900 title-font text-lg font-medium">Tooth Pic</h2>
             <p className="mt-1">$21.15</p>
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/422x262"></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/charcoal.jpg'}></img>
           </a>
           <div className="mt-4">
-            <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-            <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+            
+            <h2 className="text-gray-900 title-font text-lg font-medium">Charcoal</h2>
             <p className="mt-1">$12.00</p>
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263"></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/activated-charcoal.jpg'}></img>
           </a>
           <div className="mt-4">
-            <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-            <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+            
+            <h2 className="text-gray-900 title-font text-lg font-medium">Activated Charcoal</h2>
             <p className="mt-1">$18.40</p>
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264"></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/shoots.jpg'}></img>
           </a>
           <div className="mt-4">
-            <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-            <h2 className="text-gray-900 title-font text-lg font-medium">The Catalyzer</h2>
+            
+            <h2 className="text-gray-900 title-font text-lg font-medium">Bamboo Shoots</h2>
             <p className="mt-1">$16.00</p>
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265"></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/seedlings.jpg'}></img>
           </a>
           <div className="mt-4">
-            <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-            <h2 className="text-gray-900 title-font text-lg font-medium">Shooting Stars</h2>
+            
+            <h2 className="text-gray-900 title-font text-lg font-medium">Seedlings</h2>
             <p className="mt-1">$21.15</p>
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267"></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/culm.jpg'}></img>
           </a>
           <div className="mt-4">
-            <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-            <h2 className="text-gray-900 title-font text-lg font-medium">Neptune</h2>
+            
+            <h2 className="text-gray-900 title-font text-lg font-medium">Culm</h2>
             <p className="mt-1">$12.00</p>
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src="https://dummyimage.com/428x268"></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/paper.png'}></img>
           </a>
           <div className="mt-4">
-            <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY</h3>
-            <h2 className="text-gray-900 title-font text-lg font-medium">The 400 Blows</h2>
+            
+            <h2 className="text-gray-900 title-font text-lg font-medium">Paper</h2>
             <p className="mt-1">$18.40</p>
           </div>
         </div>
