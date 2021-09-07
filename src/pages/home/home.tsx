@@ -19,7 +19,7 @@ export default function Home() {
         <Services/>
         <Inspiration />
         <Testimonials />
-        <BlogSection />
+        {/* <BlogSection /> */}
       </div>
     </Base>
   );

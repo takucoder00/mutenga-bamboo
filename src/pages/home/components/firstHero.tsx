@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default function firstHeroHome() {
   return (
@@ -61,14 +63,14 @@ export default function firstHeroHome() {
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
-                <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10">
+                <a href="#inspiration" className="w-full flex items-center justify-center px-8 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-2 md:text-lg md:px-5">
                   Inform Me
                 </a>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
-                <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 md:py-4 md:text-lg md:px-10">
-                  Inspire Me
-                </a>
+                <Link to='/contact' className="w-full flex items-center justify-center px-8  border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 md:py-2 md:text-lg md:px-5">
+                  Find Out More
+                </Link>
               </div>
             </div>
           </div>
