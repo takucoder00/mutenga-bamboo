@@ -1,13 +1,13 @@
 import React from 'react';
 import FirstHero from './components/firstHero';
-import Header from '../../components/header';
 import Benefits from './components/benefits';
-import Products from './components/products';
 import Inspiration from './components/inspiration';
 import Testimonials from './components/testimonials';
 import BlogSection from './components/blogSection';
-import Footer from '../../components/footer';
 import Base from '../base';
+import Services from './components/services';
+
+
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <div className="Home">
         <FirstHero />
         <Benefits />
-        <Products />
+        <Services/>
         <Inspiration />
         <Testimonials />
         <BlogSection />
