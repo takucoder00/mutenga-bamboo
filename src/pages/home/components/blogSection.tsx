@@ -9,10 +9,10 @@ export default function BlogSection() {
       <div className="flex flex-wrap -m-4">
         <div className="p-4 md:w-1/3">
           <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"/>
+            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={process.env.PUBLIC_URL + '/images/blog/bamboo.jpg'} alt="blog"/>
             <div className="p-6">
-              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-              <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">SUSTAINABILITY</h2>
+              <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Is Bamboo Sustainable</h1>
               <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
               <div className="flex items-center flex-wrap ">
                 <a className="text-green-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
@@ -38,10 +38,10 @@ export default function BlogSection() {
         </div>
         <div className="p-4 md:w-1/3">
           <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/721x401" alt="blog"/>
+            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src={process.env.PUBLIC_URL + '/images/blog/floor.jpg'} alt="blog"/>
             <div className="p-6">
-              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-              <h1 className="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">FLOORING</h2>
+              <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Why bamboo flooring in the best</h1>
               <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
               <div className="flex items-center flex-wrap">
                 <a className="text-green-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
@@ -67,10 +67,10 @@ export default function BlogSection() {
         </div>
         <div className="p-4 md:w-1/3">
           <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/722x402" alt="blog"/>
+            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="//i0.wp.com/post.healthline.com/wp-content/uploads/2021/05/bamboo-shoots-shoot-food-1296x728-header.jpg?w=1575 750w" alt="blog"/>
             <div className="p-6">
-              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-              <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+              <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">HEALTH</h2>
+              <h1 className="title-font text-lg font-medium text-gray-900 mb-3">10 Benefits of Bamboo shoots</h1>
               <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
               <div className="flex items-center flex-wrap ">
                 <a className="text-green-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
