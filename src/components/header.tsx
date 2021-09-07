@@ -1,5 +1,6 @@
 //import liraries
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 // create a component
 const Header = () => {
@@ -14,18 +15,20 @@ const Header = () => {
                 <span className="ml-3 text-xl">Mutenga Bamboo</span>
               </a>
               <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Home</a>
-                <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Products</a>
-                <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Inspiraton</a>
+                
+            
+                <Link to="/" className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Home</Link>
+                <a href="#products" className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Products</a>
+                {/* <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Inspiraton</a>
                 <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Bamboo</a>
-                <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Application</a>
-                <a className="mr-5 hover:border-b-2 border-green-500 px-3">Contact</a>
+                <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Application</a> */}
+                <Link to='/contact' className="mr-5 hover:border-b-2 border-green-500 px-3">Contact</Link>
               </nav>
-              <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-500 hover:text-white rounded text-base mt-4 md:mt-0">Button
+              <Link to='/contact' className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-500 hover:text-white rounded text-base mt-4 md:mt-0">Get In Touch
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </button>
+              </Link>
             </div>
           </header>
 
