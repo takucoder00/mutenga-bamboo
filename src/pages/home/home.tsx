@@ -7,18 +7,20 @@ import Inspiration from './components/inspiration';
 import Testimonials from './components/testimonials';
 import BlogSection from './components/blogSection';
 import Footer from '../../components/footer';
+import Base from '../base';
+
 
 export default function Home() {
   return (
-    <div className="Home">
-        <Header/>
-        <FirstHero/>
+    <Base>
+      <div className="Home">
+        <FirstHero />
         <Benefits />
         <Products />
         <Inspiration />
         <Testimonials />
         <BlogSection />
-        <Footer/>
-    </div>
+      </div>
+    </Base>
   );
 }
