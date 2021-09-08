@@ -29,7 +29,7 @@ export default function Footer() {
               <Link to="/terms" className="text-gray-600 hover:text-gray-800">Terms and Conditions</Link>
             </li>
             <li>
-              <a className="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+              <Link to="/privacy" className="text-gray-600 hover:text-gray-800">Privacy Policy</Link>
             </li>
           </nav>
         </div>

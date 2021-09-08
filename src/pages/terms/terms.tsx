@@ -6,19 +6,18 @@ import Base from '../base'
 export default function Terms() {
     return (
         <Base>
-            <div>
+            <div id="terms">
             <div className=" px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-                <div id="flexrow-1" className="wrap content_media none spacing-default">
-                    <div className="container none">
-                        <div className="inner_wrapper flex-media-content ratio5050 flex-between-center">
-                            <div className="content wp-editor full">
-                                <div className="desc clrfix">
+           
+                       
+                            <div>
+                                <div>
                                     <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto" >
                                         General terms and conditions</h2>
                                     <h3 className="text-center text-gray-500" >General
                                         terms and conditions of delivery and payment of Mutenga Bamboo</h3>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 1: APPLICABILITY</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 1: APPLICABILITY</h2>
                                     <ol className="list-decimal">
                                         <li>These terms and conditions shall apply to all offers and to all purchase and
                                             sale agreements of Mutenga Bamboo,
@@ -42,8 +41,8 @@ export default function Terms() {
                                             apply, this shall not affect the applicability of the remaining provisions.
                                         </li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 2: AGREEMENTS</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 2: AGREEMENTS</h2>
                                     <ol className="list-decimal">
                                         <li>Agreements shall only become binding on written confirmation by the user.
                                         </li>
@@ -54,8 +53,8 @@ export default function Terms() {
                                             changes or supplements to the agreement shall only become binding once they
                                             have been confirmed by the user in writing.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 3: OFFERS</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 3: OFFERS</h2>
                                     <ol className="list-decimal">
                                         <li>All offers, quotations, price lists, delivery periods etc. of the user shall
                                             be without obligation, unless they contain a period for acceptance. Should a
@@ -92,13 +91,13 @@ export default function Terms() {
                                             of less than 3 months, the consumer shall be entitled to dissolve the
                                             agreement.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 4: USING THIRD PARTIES&nbsp;</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 4: USING THIRD PARTIES&nbsp;</h2>
                                     <p >If and insofar as this is required for the proper
                                         execution of the agreement, the user shall be entitled to have specific
                                         activities and/or deliveries carried out by third parties.</p>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 5: DELIVERY, DELIVERY PERIODS​</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 5: DELIVERY, DELIVERY PERIODS​</h2>
                                     <ol className="list-decimal">
                                         <li>Stated delivery periods within which the goods must be delivered may never
                                             be regarded as fixed deadlines, unless the parties have expressly agreed
@@ -139,8 +138,8 @@ export default function Terms() {
                                             financial obligations of the other party – advance payment or security from
                                             the other party before commencing the delivery.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 6: PROGRESS OF THE DELIVERY​</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 6: PROGRESS OF THE DELIVERY​</h2>
                                     <ol className="list-decimal">
                                         <li>The user cannot be required to start delivering the goods until all the
                                             information required for this is in its possession and it has received any
@@ -153,8 +152,8 @@ export default function Terms() {
                                             the request of the other party shall be entirely for the account of the
                                             latter, unless the parties have expressly agreed otherwise in writing.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 7: PACKAGING</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 7: PACKAGING</h2>
                                     <ol className="list-decimal">
                                         <li>The reusable packaging in which the goods are delivered shall remain the
                                             property of the user and may not be used by the other party for purposes
@@ -170,8 +169,8 @@ export default function Terms() {
                                             party shall be charged for packaging at cost price and the packaging shall
                                             not be taken back.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 8: COMPLAINTS AND RETURNS​</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 8: COMPLAINTS AND RETURNS​</h2>
                                     <ol className="list-decimal">
                                         <li>The other party shall be obliged to check the goods immediately on taking
                                             delivery thereof. Should the other party discover visible defects,
@@ -212,8 +211,8 @@ export default function Terms() {
                                         <li>In the case of valid complaints, the claim shall be settled pursuant to the
                                             provisions of clause 9.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 9: LIABILITY AND GUARANTEE​</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 9: LIABILITY AND GUARANTEE​</h2>
                                     <ol className="list-decimal">
                                         <li>The user shall discharge its task as may be expected of a company in its
                                             line of business, but accepts no liability whatsoever for loss, damage or
@@ -261,8 +260,8 @@ export default function Terms() {
                                             behalf of the other party and/or the use of which by the user was prescribed
                                             by or on behalf of the other party.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 10: PAYMENT&nbsp;​</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 10: PAYMENT&nbsp;​</h2>
                                     <ol className="list-decimal">
                                         <li>Payment must be made within 30 days of the date of invoice, unless the
                                             parties have expressly agreed otherwise in writing.</li>
@@ -306,8 +305,8 @@ export default function Terms() {
                                             B.&nbsp;&nbsp; &nbsp;The provisions under A of this subclause shall not
                                             apply to agreements concluded with the consumer.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 11: RETENTION OF TITLE&nbsp;​</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 11: RETENTION OF TITLE&nbsp;​</h2>
                                     <ol className="list-decimal">
                                         <li>The user shall retain ownership of the goods delivered and to be delivered
                                             until the other party has fulfilled its payment obligations vis-à-vis the
@@ -325,8 +324,8 @@ export default function Terms() {
                                             writing should third parties assert rights in respect of goods which are
                                             subject to the retention of title pursuant to this clause.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 12: PLEDGE/WARRANTAGE</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 12: PLEDGE/WARRANTAGE</h2>
                                     <p >Up to the time at which the other party has fulfilled
                                         all its payment obligations vis-à-vis the user in this regard, the other party
                                         shall not be entitled to give the delivered goods to third parties as security
@@ -338,9 +337,9 @@ export default function Terms() {
                                         agreement without being obliged to give any notice of default and without
                                         prejudice to the right of the user to claim compensation for loss or damage,
                                         lost profit and interest.</p>
-                                    <h4 className="content-smalltitle text-align-center" >
+                                    
                                         <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 13: BANKRUPTCY, LOSS OF POWER TO DISPOSE OF PROPERTY and
-                                            suchlike​</h2></h4>
+                                            suchlike​</h2>
                                     <p >Without prejudice to the provisions of the other
                                         clauses of these terms and conditions, the agreement concluded between the other
                                         party and the user shall be dissolved without any judicial intervention and
@@ -350,8 +349,8 @@ export default function Terms() {
                                         or loses its power and/or legal capacity to dispose of its assets or parts
                                         thereof in any other way, unless the receiver or administrator acknowledges the
                                         obligations arising from the agreement as estate debt.</p>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 14: FORCE MAJEURE​</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 14: FORCE MAJEURE​</h2>
                                     <ol className="list-decimal">
                                         <li>Should the user be unable to fulfil its obligations pursuant to the
                                             agreement concluded with the other party and this is due to non-attributable
@@ -374,8 +373,8 @@ export default function Terms() {
                                             late performance takes place at the user, its suppliers or third parties
                                             brought in by the user for the execution of the obligation.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 15: DISSOLUTION, CANCELLATION/TERMINATION</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 15: DISSOLUTION, CANCELLATION/TERMINATION</h2>
                                     <ol className="list-decimal">
                                         <li>A.&nbsp;&nbsp; &nbsp;The other party waives all rights to dissolve the
                                             agreement pursuant to article 6:265 ff. Dutch Civil Code or other statutory
@@ -402,8 +401,8 @@ export default function Terms() {
                                             regard.</li>
                                         <li>Amounts already paid by the other party shall not be refunded.</li>
                                     </ol>
-                                    <h4 className="content-smalltitle text-align-center" >
-                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 16: APPLICABLE LAW/COMPETENT COURT</h2></h4>
+                                    
+                                        <h2 className="font-bold text-md pt-5 pb-3">CLAUSE 16: APPLICABLE LAW/COMPETENT COURT</h2>
                                     <ol className="list-decimal">
                                         <li>The agreement concluded between the user and the other party shall be
                                             subject exclusively to Dutch law. Disputes that arise from the agreement
@@ -431,10 +430,6 @@ export default function Terms() {
                                    
                                 </div>
                             </div>
-                        </div>
-
-                    </div>
-                </div>
             </div>
         </div>
         </Base>

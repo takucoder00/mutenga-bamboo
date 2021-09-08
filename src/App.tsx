@@ -11,7 +11,7 @@ import Shop from './pages/shop/shop';
 import About from './pages/about/about';
 import ScrollToTop from './components/scrollToTop';
 import Terms from './pages/terms/terms';
-
+import Privacy from './pages/privacy/privacy';
 
 
 
@@ -27,6 +27,7 @@ function App() {
        <Route path="/shop" component={Shop} />
        <Route path="/about" component={About} />
        <Route path="/terms" component={Terms} />
+       <Route path="/privacy" component={Privacy} />
        </ScrollToTop>
     </Router>
     
