@@ -10,6 +10,9 @@ import Contact from './pages/contact/contact';
 import Shop from './pages/shop/shop';
 import About from './pages/about/about';
 import ScrollToTop from './components/scrollToTop';
+import Terms from './pages/terms/terms';
+
+
 
 
 
@@ -23,6 +26,7 @@ function App() {
        <Route path="/contact" component={Contact} />
        <Route path="/shop" component={Shop} />
        <Route path="/about" component={About} />
+       <Route path="/terms" component={Terms} />
        </ScrollToTop>
     </Router>
     
