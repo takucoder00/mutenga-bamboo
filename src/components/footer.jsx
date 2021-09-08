@@ -26,7 +26,7 @@ export default function Footer() {
             </li>
             
             <li>
-              <a className="text-gray-600 hover:text-gray-800">Terms and Conditions</a>
+              <Link to="/terms" className="text-gray-600 hover:text-gray-800">Terms and Conditions</Link>
             </li>
             <li>
               <a className="text-gray-600 hover:text-gray-800">Privacy Policy</a>
@@ -37,19 +37,19 @@ export default function Footer() {
           <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">PRODUCTS</h2>
           <nav className="list-none mb-10">
             <li>
-              <a className="text-gray-600 hover:text-gray-800">Charcoal</a>
+              <Link to="/shop" className="text-gray-600 hover:text-gray-800">Charcoal</Link>
             </li>
             <li>
-              <a className="text-gray-600 hover:text-gray-800">Seedlings</a>
+              <Link to="/shop" className="text-gray-600 hover:text-gray-800">Seedlings</Link>
             </li>
             <li>
-              <a className="text-gray-600 hover:text-gray-800">Paper</a>
+              <Link to="/shop" className="text-gray-600 hover:text-gray-800">Paper</Link>
             </li>
             <li>
-              <a className="text-gray-600 hover:text-gray-800">Shoots</a>
+              <Link to="/shop" className="text-gray-600 hover:text-gray-800">Shoots</Link>
             </li>
             <li>
-              <a className="text-gray-600 hover:text-gray-800">Toothpics</a>
+              <Link to="/shop" className="text-gray-600 hover:text-gray-800">Toothpics</Link>
             </li>
           </nav>
         </div>
