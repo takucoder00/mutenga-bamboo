@@ -18,6 +18,10 @@ import Privacy from './pages/privacy/privacy';
 
 
 function App() {
+
+
+
+  
   return (
     
     <Router>
