@@ -85,7 +85,7 @@ export default function Footer() {
               <Link to="/shop" className="text-gray-600 hover:text-gray-800">Shoots</Link>
             </li>
             <li>
-              <Link to="/shop" className="text-gray-600 hover:text-gray-800">Toothpics</Link>
+              <Link to="/shop" className="text-gray-600 hover:text-gray-800">Toothpicks</Link>
             </li>
           </nav>
         </div>
