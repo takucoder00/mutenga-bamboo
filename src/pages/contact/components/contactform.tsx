@@ -1,6 +1,49 @@
-import React from 'react'
+import axios from 'axios';
+import React, {useState, useEffect} from 'react'
+import { siteEndpoint } from '../../../global';
+import { useSnackbar } from 'react-simple-snackbar'
 
 export default function ContactForm() {
+
+  const [openSnackbar, closeSnackbar] = useSnackbar({
+    position: 'bottom-left',
+  })
+
+  const [topic, setTopic] = useState('Enquiry');
+  const [userName, setUserName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [userMessage, setUserMessage] = useState('');
+  const [userExtras, setUserExtras] = useState('');
+  const [userPhone, setUserPhone] = useState('');
+
+  useEffect(() => {
+    document.title = 'MutengaBamboo - Contact Us';
+  })
+
+  const sendContactMessage = () => {
+    
+    axios.get(siteEndpoint + 'sanctum/csrf-cookie')
+    .then(res => {
+
+      axios.post(siteEndpoint + 'api/contact', 
+      {
+        topic: topic,
+        name: userName,
+        email: userEmail,
+        message: userMessage,
+        extras: userExtras,
+        phone: userPhone
+
+      }).then(res => {
+        let respData = res.data
+        if(respData.status === "success") {
+          openSnackbar(respData.message)   
+        }
+      }) 
+    });
+  }
+
+  
     return (
         <section className="text-gray-600 body-font relative">
              <h1 className="text-3xl py-10 px-14  font-bold title-font text-gray-900 mb-12">Say Hello</h1>
@@ -27,7 +70,7 @@ export default function ContactForm() {
       <p className="leading-relaxed mb-5 text-gray-600">Do you have any question or suggestion? Say hello to Mutenga Bamboo</p>
       <div className="relative mb-4">
         <label htmlFor="topic" className="leading-7 text-sm text-gray-600">Topic</label>
-        <select id="topic" name="topic" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        <select id="topic" name="topic" value={topic} onChange={(e) => setTopic(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
             <option value="enquiry">Enquiry</option>
             <option value="suggestion">Suggestion</option>
             <option value="query">Query</option>
@@ -38,17 +81,17 @@ export default function ContactForm() {
       </div>
       <div className="relative mb-4">
         <label htmlFor="name" className="leading-7 text-sm text-gray-600">Name</label>
-        <input type="text" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+        <input type="text" id="name" name="name" value={userName} onChange={(e) => setUserName(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
       </div>
       <div className="relative mb-4">
         <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-        <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+        <input type="email" id="email" name="email" value={userEmail} onChange={(e) => setUserEmail(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
       </div>
       <div className="relative mb-4">
         <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-        <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        <textarea id="message" name="message" value={userMessage} onChange={(e) => setUserMessage(e.target.value)} className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
       </div>
-      <button className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Send Message</button>
+      <button onClick={sendContactMessage} className="text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">Send Message</button>
       <p className="text-xs text-gray-500 mt-3">Terms and Conditions apply</p>
     </div>
   </div>
