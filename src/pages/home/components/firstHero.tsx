@@ -18,7 +18,7 @@ export default function firstHeroHome() {
 
           </div>
 
-          <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          {/* <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
             <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
@@ -47,7 +47,7 @@ export default function firstHeroHome() {
                 Log in
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
@@ -63,12 +63,12 @@ export default function firstHeroHome() {
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
-                <a href="#inspiration" className="w-full flex items-center justify-center px-8 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-2 md:text-lg md:px-5">
+                <a href="#inspiration" className="w-full flex items-center py-2 justify-center px-8 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-2 md:text-lg md:px-5">
                   Inform Me
                 </a>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
-                <Link to='/contact' className="w-full flex items-center justify-center px-8  border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 md:py-2 md:text-lg md:px-5">
+                <Link to='/contact' className="w-full flex items-center py-2 justify-center px-8  border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 md:py-2 md:text-lg md:px-5">
                   Find Out More
                 </Link>
               </div>

@@ -8,9 +8,8 @@ import Base from '../base';
 import Services from './components/services';
 
 
-
-
 export default function Home() {
+ 
   return (
     <Base>
       <div className="Home">
