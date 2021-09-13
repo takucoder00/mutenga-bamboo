@@ -12,24 +12,24 @@ export default function Inspiration() {
       <div className="flex flex-wrap md:-m-2 -m-1">
         <div className="flex flex-wrap w-1/2">
           <div className="md:p-2 p-1 w-1/2">
-            <img alt="gallery" className="w-full object-cover h-full object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/house2.jpg'}/>
+            <img alt="gallery" className="w-full object-cover h-full object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/house2.webp'}/>
           </div>
           <div className="md:p-2 p-1 w-1/2">
-            <img alt="gallery" className="w-full object-cover h-full object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/house1.jpg'}/>
+            <img alt="gallery" className="w-full object-cover h-full object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/house1.webp'}/>
           </div>
           <div className="md:p-2 p-1 w-full">
-            <img alt="gallery" className="w-full h-full object-cover object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/jakarta.jpg'}/>
+            <img alt="gallery" className="w-full h-full object-cover object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/jakarta.webp'}/>
           </div>
         </div>
         <div className="flex flex-wrap w-1/2">
           <div className="md:p-2 p-1 w-full">
-            <img alt="gallery" className="w-full h-full object-cover object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/solana.jpg'}/>
+            <img alt="gallery" className="w-full h-full object-cover object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/solana.webp'}/>
           </div>
           <div className="md:p-2 p-1 w-1/2">
-            <img alt="gallery" className="w-full object-cover h-full object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/house.jpg'}/>
+            <img alt="gallery" className="w-full object-cover h-full object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/house.webp'}/>
           </div>
           <div className="md:p-2 p-1 w-1/2">
-            <img alt="gallery" className="w-full object-cover h-full object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/furniture1.jpg'}/>
+            <img alt="gallery" className="w-full object-cover h-full object-center block" src={process.env.PUBLIC_URL + '/images/inspiration/furniture1.webp'}/>
           </div>
         </div>
       </div>

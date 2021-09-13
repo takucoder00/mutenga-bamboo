@@ -1,5 +1,5 @@
 import React from 'react';
-import mortar from '%PUBLIC_URL%/images/products/mortar.jpg'
+import mortar from '%PUBLIC_URL%/images/products/mortar.webp'
 
 export default function products() {
   return (
@@ -10,7 +10,7 @@ export default function products() {
       <div className="flex flex-wrap -m-4">
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20mortar%20and%20pestle" className="block relative h-48 rounded overflow-hidden">
-            <img alt="mortar and pestle" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + "/images/products/mortar.jpg"}></img>
+            <img alt="mortar and pestle" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + "/images/products/mortar.webp"}></img>
           </a>
           <div className="mt-4">
             
@@ -20,17 +20,17 @@ export default function products() {
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20tooth%20pic" className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/toothpic.jpg'}></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/toothpic.webp'}></img>
           </a>
           <div className="mt-4">
             
-            <h2 className="text-gray-900 title-font text-lg font-medium">Tooth Pic</h2>
+            <h2 className="text-gray-900 title-font text-lg font-medium">Toothpicks</h2>
             <p className="mt-1">$21.15</p>
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20charcoal" className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/charcoal.jpg'}></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/charcoal.webp'}></img>
           </a>
           <div className="mt-4">
             
@@ -40,7 +40,7 @@ export default function products() {
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20activated%20charcoal" className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/activated-charcoal.jpg'}></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/activated-charcoal.webp'}></img>
           </a>
           <div className="mt-4">
             
@@ -50,7 +50,7 @@ export default function products() {
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20shoots" className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/shoots.jpg'}></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/shoots.webp'}></img>
           </a>
           <div className="mt-4">
             
@@ -60,7 +60,7 @@ export default function products() {
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20tooth%20seedlings" className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/seedlings.jpg'}></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/seedlings.webp'}></img>
           </a>
           <div className="mt-4">
             
@@ -70,7 +70,7 @@ export default function products() {
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20culms" className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/culm.jpg'}></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/culm.webp'}></img>
           </a>
           <div className="mt-4">
             
@@ -80,7 +80,7 @@ export default function products() {
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20paper" className="block relative h-48 rounded overflow-hidden">
-            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/paper.png'}></img>
+            <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/paper.webp'}></img>
           </a>
           <div className="mt-4">
             
