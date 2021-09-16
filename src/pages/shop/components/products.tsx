@@ -79,6 +79,17 @@ export default function products() {
           </div>
         </div>
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20lathe%20machine" className="block relative h-48 rounded overflow-hidden">
+            {/* <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/culm.webp'}></img> */}
+            <iframe className="object-cover object-center w-full h-full block" width="560" height="315" src="https://www.youtube-nocookie.com/embed/iRD6ovBfBLw?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </a>
+          <div className="mt-4">
+            
+            <h2 className="text-gray-900 title-font text-lg font-medium">Bamboo Lathe Machine</h2>
+            <p className="mt-1">$12.00</p>
+          </div>
+        </div>
+        <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20paper" className="block relative h-48 rounded overflow-hidden">
             <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={process.env.PUBLIC_URL + '/images/products/paper.webp'}></img>
           </a>
