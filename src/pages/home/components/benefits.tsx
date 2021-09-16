@@ -67,6 +67,7 @@ export default function Benefits() {
 
                         <div className="flex items-center justify-center w-full h-96 lg:w-1/2">
                             <img className="object-cover w-full h-full max-w-2xl rounded-md" src="https://cdn.shopify.com/s/files/1/0062/8532/8445/files/BB_bamboo-plants_480x480.jpg?v=1620332090" alt="glasses photo"></img>
+                            
                         </div>
                     </div>
                 </div>
