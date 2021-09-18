@@ -15,6 +15,7 @@ import Privacy from './pages/privacy/privacy';
 import {useEffect} from 'react';
 import axios from 'axios';
 import SnackbarProvider from 'react-simple-snackbar'
+import Celebrations from './pages/bamboo_celebrations/celebrations';
 
 axios.defaults.withCredentials  = true;
 
@@ -28,6 +29,7 @@ function App() {
   })
 
 
+
   
   return (
     <SnackbarProvider>
@@ -39,6 +41,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/terms" component={Terms} />
         <Route path="/privacy" component={Privacy} />
+        <Route path="/celebrations" component={Celebrations} />
         </ScrollToTop>
       </Router>
       </SnackbarProvider>
