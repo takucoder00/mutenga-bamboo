@@ -22,6 +22,7 @@ const Header = () => {
                 {/* <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Inspiraton</a>
                 <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Bamboo</a>
                 <a className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Application</a> */}
+                <Link to="/stories" className="mr-5 hover:border-b-2 hover:border-green-500 px-3">Stories</Link>
                 <Link to='/about' className="mr-5 hover:border-b-2 border-green-500 px-3">About</Link>
                 <Link to='/contact' className="mr-5 hover:border-b-2 border-green-500 px-3">Contact</Link>
                 <Link to='/celebrations' className="mr-5 hover:border-b-2 hover:text-green- border-green-500 px-3">World Bamboo Day</Link>

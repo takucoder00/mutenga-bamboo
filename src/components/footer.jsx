@@ -55,6 +55,9 @@ export default function Footer() {
               <Link to='/' className="text-gray-600 hover:text-gray-800">Home</Link>
             </li>
             <li>
+              <Link to='/stories' className="text-gray-600 hover:text-gray-800">Stories</Link>
+            </li>
+            <li>
               <Link to="/about#about" className="text-gray-600 hover:text-gray-800">About</Link>
             </li>
             <li>

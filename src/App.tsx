@@ -16,7 +16,7 @@ import {useEffect} from 'react';
 import axios from 'axios';
 import SnackbarProvider from 'react-simple-snackbar'
 import Celebrations from './pages/bamboo_celebrations/celebrations';
-import Stories from './pages/stories/stories.js';
+import Stories from './pages/stories/stories';
 
 axios.defaults.withCredentials  = true;
 
