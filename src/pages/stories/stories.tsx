@@ -1,9 +1,14 @@
 
 
 import React from 'react'
+import Base from "../base"
+import MutengaStories from './components/MutengaStories'
 
 export default function Stories() {
   return (
-    <div>Stories</div>
+    <Base className="Stories">
+    
+        <MutengaStories/>
+    </Base>
   )
 }
