@@ -131,7 +131,7 @@ export default function Footer() {
           <span className="ml-3 text-green-500 text-xl">Mutenga Bamboo</span>
         </a>
         <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© { currentYear } Mutenga Bamboo —
-          <a href="https://blckmedia.co.zw" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">BLCK Creative Studios</a>
+          <a href="https://takucoder.dev" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">Takucoder</a>
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <a className="text-gray-500">
