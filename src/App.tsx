@@ -16,6 +16,7 @@ import {useEffect} from 'react';
 import axios from 'axios';
 import SnackbarProvider from 'react-simple-snackbar'
 import Celebrations from './pages/bamboo_celebrations/celebrations';
+import Stories from './pages/stories/stories.js';
 
 axios.defaults.withCredentials  = true;
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/terms" component={Terms} />
         <Route path="/privacy" component={Privacy} />
         <Route path="/celebrations" component={Celebrations} />
+        <Route path="/stories" component={Stories} />
         </ScrollToTop>
       </Router>
       </SnackbarProvider>
