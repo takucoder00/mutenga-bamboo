@@ -1,0 +1,14 @@
+
+Upgrade to TailwindCSS 3
+--------------------------
+- Check upgrade guide for tailwindcss 3
+- Check the codebase to see how it was build
+- Try to estimate the possible work needed to ugrade 
+
+Stories
+-----------
+- Add stories cards 
+- Add stories page 
+- Add story details page 
+
+
