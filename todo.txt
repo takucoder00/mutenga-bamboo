@@ -16,3 +16,8 @@ API
 -------
 - Create functions to read blogs
 - Create function to read blog
+
+Upgrade to Next JS 12
+-----------------------
+- How to upgrade  from CRA to Next 
+- Check installation guide
