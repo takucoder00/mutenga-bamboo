@@ -12,3 +12,7 @@ Stories
 - Add story details page 
 
 
+API 
+-------
+- Create functions to read blogs
+- Create function to read blog
