@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { Navbar, Button, Text, createStyles, getStylesRef, rem } from '@mantine/core';
 
 import { IconArrowRight } from '@tabler/icons-react';
+import { useRouter } from 'next/router';
+
 
 
 const useStyles = createStyles((theme) => ({
@@ -79,6 +81,7 @@ const linksList = [
 // create a component
 const Header = () => {
 
+  const router = useRouter()
   const { classes, cx } = useStyles();
   const [active, setActive] = useState('Home');
 
@@ -90,7 +93,9 @@ const Header = () => {
       key={item.label}
       onClick={(event) => {
         event.preventDefault();
+        router.push(item.link)
         setActive(item.label);
+       
       }}
     >
       <span>{item.label}</span>
