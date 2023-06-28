@@ -3,66 +3,60 @@ import React, { Component, useState } from 'react';
 import AppLogo from './appLogo';
 import Link from 'next/link';
 
-import { Navbar, Button, Text, createStyles, getStylesRef, rem } from '@mantine/core';
+import { Navbar, Button, Text, createStyles, getStylesRef, rem, Group } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
 
 import { IconArrowRight } from '@tabler/icons-react';
+import { useRouter } from 'next/router';
+
 
 
 const useStyles = createStyles((theme) => ({
-  navbar: {
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[7] : theme.white,
+  header: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: '100%',
   },
 
-  title: {
-    textTransform: 'uppercase',
-    letterSpacing: rem(-0.25),
+  links: {
+    [theme.fn.smallerThan('xs')]: {
+      display: 'none',
+    },
+  },
+
+  burger: {
+    [theme.fn.largerThan('xs')]: {
+      display: 'none',
+    },
   },
 
   link: {
-    ...theme.fn.focusStyles(),
-    // display: 'flex',
-    // alignItems: 'center',
-    textDecoration: 'none',
-    fontSize: theme.fontSizes.sm,
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[7],
-    padding: `${theme.spacing.xs} ${theme.spacing.sm}`,
+    display: 'block',
+    lineHeight: 1,
+    padding: `${rem(8)} ${rem(12)}`,
     borderRadius: theme.radius.sm,
+    textDecoration: 'none',
+    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
+    fontSize: theme.fontSizes.sm,
     fontWeight: 500,
 
     '&:hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
-      color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-
-      [`& .${getStylesRef('icon')}`]: {
-        color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-      },
     },
-  },
-
-  linkIcon: {
-    ref: getStylesRef('icon'),
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[2] : theme.colors.gray[6],
-    marginRight: theme.spacing.sm,
   },
 
   linkActive: {
     '&, &:hover': {
       backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
       color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
-      [`& .${getStylesRef('icon')}`]: {
-        color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
-      },
     },
-  },
-
-  footer: {
-    borderTop: `${rem(1)} solid ${
-      theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
-    }`,
-    paddingTop: theme.spacing.md,
   },
 }));
 
+interface HeaderSimpleProps {
+  links: { link: string; label: string }[];
+}
 
 
 const linksList = [
@@ -79,18 +73,23 @@ const linksList = [
 // create a component
 const Header = () => {
 
+  const router = useRouter()
   const { classes, cx } = useStyles();
   const [active, setActive] = useState('Home');
+  const [opened, { toggle }] = useDisclosure(false);
+
 
 
   const links = linksList.map((item) => (
     <a
-      className={cx(classes.link, { [classes.linkActive]: item.label === active })}
+      className={cx(classes.link, { [classes.linkActive]: active === item.label })}
       href={item.link}
       key={item.label}
       onClick={(event) => {
         event.preventDefault();
+        router.push(item.link)
         setActive(item.label);
+       
       }}
     >
       <span>{item.label}</span>
@@ -109,9 +108,9 @@ const Header = () => {
               <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 
 
-              <Navbar.Section grow mt="xl">
+              <Group spacing={5} className={classes.links}>
         {links}
-      </Navbar.Section>
+      </Group>
                 
             
                 
