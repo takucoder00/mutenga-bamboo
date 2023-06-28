@@ -1,5 +1,6 @@
 import React from 'react'
 import { StoryCard } from './storyCard'
+import { StoryDetail } from './storyDetail'
 
 export default function MutengaStories() {
     return (
@@ -25,11 +26,13 @@ export default function MutengaStories() {
     Read our stories
     </p>
   </div>
-  <div className="grid max-w-screen-lg gap-8 lg:grid-cols-4 sm:mx-auto">
+
+  <StoryDetail/>
+  {/* <div className="grid max-w-screen-lg gap-8 lg:grid-cols-4 sm:mx-auto">
       <StoryCard image={'https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80'} title={'Presidental Borehole Drilling Serivce Scheme brings clean water to chivi'}/>
       <StoryCard image={'https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80'} title={'Presidental Borehole Drilling Serivce Scheme brings clean water to chivi'}/>
       <StoryCard image={'https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80'} title={'Presidental Borehole Drilling Serivce Scheme brings clean water to chivi'}/>
-  </div>
+  </div> */}
 </div>
         </div>
     )
