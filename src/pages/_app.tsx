@@ -2,6 +2,7 @@
 import type { AppProps } from 'next/app'
 import '../styles/globals.css'
 import { MantineProvider } from '@mantine/core';
+import Header from '@/components/header';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,6 +15,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           colorScheme: 'light',
         }}
       >
+
+      <Header/>
       <Component {...pageProps} />
       </MantineProvider>
     </>

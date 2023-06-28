@@ -5,7 +5,7 @@ import Header from '../components/header';
 export default function Base(props: any) {
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
         { props.children }
     <Footer/>
     
