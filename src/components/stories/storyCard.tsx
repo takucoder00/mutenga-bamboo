@@ -39,26 +39,10 @@ const useStyles = createStyles((theme) => ({
 interface BadgeCardProps {
   image: string;
   title: string;
-  country: string;
-  description: string;
-  badges: {
-    emoji: string;
-    label: string;
-  }[];
 }
 
-export function BadgeCard({ image, title, description, country, badges }: BadgeCardProps) {
+export function StoryCard({ image, title }: BadgeCardProps) {
   const { classes, theme } = useStyles();
-
-  const features = badges.map((badge) => (
-    <Badge
-      color={theme.colorScheme === 'dark' ? 'dark' : 'gray'}
-      key={badge.label}
-      leftSection={badge.emoji}
-    >
-      {badge.label}
-    </Badge>
-  ));
 
   return (
     <Card withBorder radius="md" p="md" className={classes.card}>
@@ -71,29 +55,16 @@ export function BadgeCard({ image, title, description, country, badges }: BadgeC
           <Text fz="lg" fw={500}>
             {title}
           </Text>
-          <Badge size="sm">{country}</Badge>
-        </Group>
-        <Text fz="sm" mt="xs">
-          {description}
-        </Text>
-      </Card.Section>
-
-      <Card.Section className={classes.section}>
-        <Text mt="md" className={classes.label} c="dimmed">
-          Perfect for you, if you enjoy
-        </Text>
-        <Group spacing={7} mt={5}>
-          {features}
         </Group>
       </Card.Section>
 
       <Group mt="xs">
         <Button radius="md" style={{ flex: 1 }}>
-          Show details
+          Read More...
         </Button>
-        <ActionIcon variant="default" radius="md" size={36}>
+        {/* <ActionIcon variant="default" radius="md" size={36}>
           <IconHeart size="1.1rem" className={classes.like} stroke={1.5} />
-        </ActionIcon>
+        </ActionIcon> */}
       </Group>
     </Card>
   );
