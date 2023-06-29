@@ -1,20 +1,21 @@
 import Base from "@/pages/base"
-import { Image, Title, Divider } from "@mantine/core"
+import { Image, Title, Divider, Text } from "@mantine/core"
 import React from "react"
 import { StoryPostBy } from "./storyPostBy"
+import { BlogPost } from "src/types/general"
 
 
 
 
 
-export function StoryDetail(){
+export function StoryDetail({post}: { post: BlogPost}){
 
 
     return (
      <Base>
 
      <Image 
-       src={"https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80"} 
+       src={`${process.env.STORAGE_PATH}/${post.image}`} 
        height={420} width={1000}
        />
 
@@ -22,13 +23,12 @@ export function StoryDetail(){
 
        <Divider my="sm" />
 
-       <Title order={1}>President Emmerson Mnangawnan did so and so</Title>
-
-       
+       <Title order={1}>{ post.title }</Title>
 
 
-
-     
+       <Text>
+        {post.content}
+       </Text>
      </Base>
     )
 }
