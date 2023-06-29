@@ -1,5 +1,5 @@
 import Base from "@/pages/base"
-import { Image, Title } from "@mantine/core"
+import { Image, Title, Divider } from "@mantine/core"
 import React from "react"
 import { StoryPostBy } from "./storyPostBy"
 
@@ -19,6 +19,8 @@ export function StoryDetail(){
        />
 
        <StoryPostBy date={"16 Dec 2021"}/>
+
+       <Divider my="sm" />
 
        <Title order={1}>President Emmerson Mnangawnan did so and so</Title>
 
