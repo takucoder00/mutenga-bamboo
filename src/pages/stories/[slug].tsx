@@ -10,7 +10,7 @@ export default function Story({post}: any) {
   return (
     <Base>
 
-        <StoryDetail story={story}/>
+        <StoryDetail post={post}/>
     
     </Base>
   )

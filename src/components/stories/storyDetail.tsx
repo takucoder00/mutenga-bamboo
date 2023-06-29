@@ -4,10 +4,6 @@ import React from "react"
 import { StoryPostBy } from "./storyPostBy"
 import { BlogPost } from "src/types/general"
 
-
-
-
-
 export function StoryDetail({post}: { post: BlogPost}){
 
 
@@ -20,12 +16,9 @@ export function StoryDetail({post}: { post: BlogPost}){
        />
 
        <StoryPostBy date={"16 Dec 2021"}/>
-
        <Divider my="sm" />
-
        <Title order={1}>{ post.title }</Title>
-
-
+       
        <Text>
         {post.content}
        </Text>
