@@ -9,7 +9,9 @@ import {
   ActionIcon,
   createStyles,
   rem,
+  Title,
 } from '@mantine/core';
+import Link from 'next/link';
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -37,24 +39,27 @@ const useStyles = createStyles((theme) => ({
 }));
 
 interface BadgeCardProps {
+  id: number;
+  slug:string;
   image: string;
   title: string;
 }
 
-export function StoryCard({ image, title }: BadgeCardProps) {
+export function StoryCard({ id, slug, image, title }: BadgeCardProps) {
   const { classes, theme } = useStyles();
 
   return (
-    <Card withBorder radius="md" p="md" className={classes.card}>
+    <Link href={`/stories/${slug}`}>
+      <Card withBorder radius="md" p="md" className={classes.card}>
       <Card.Section>
         <Image src={image} alt={title} height={180} />
       </Card.Section>
 
       <Card.Section className={classes.section} mt="md">
         <Group position="apart">
-          <Text fz="lg" fw={500}>
+          <Title order={4}>
             {title}
-          </Text>
+          </Title>
         </Group>
       </Card.Section>
 
@@ -67,5 +72,7 @@ export function StoryCard({ image, title }: BadgeCardProps) {
         </ActionIcon> */}
       </Group>
     </Card>
+    
+    </Link>
   );
 }
