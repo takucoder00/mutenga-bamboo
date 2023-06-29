@@ -18,10 +18,10 @@ export function StoryDetail({post}: { post: BlogPost}){
        <StoryPostBy date={"16 Dec 2021"}/>
        <Divider my="sm" />
        <Title order={1}>{ post.title }</Title>
-       
-       <Text>
+
+       <article className="prose md:prose-lg lg:prose-xl">
         {post.content}
-       </Text>
+       </article>
      </Base>
     )
 }
