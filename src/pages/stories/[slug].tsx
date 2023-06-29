@@ -3,20 +3,20 @@
 
 import React from 'react'
 import { BlogPost } from 'src/types/general'
-import Base from './base'
+import Base from '../base'
 import { StoryDetail } from '@/components/stories/storyDetail'
 
-export default function Story() {
+export default function Story({post}: any) {
   return (
     <Base>
 
-        <StoryDetail/>
+        <StoryDetail story={story}/>
     
     </Base>
   )
 }
 
-async function getStaticPaths() {
+export async function getStaticPaths() {
  
     // Call an outside API endpoint to get posts
     const res = await fetch(`${process.env.ENDPOINT_URL}/posts`)
