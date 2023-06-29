@@ -1,14 +1,9 @@
 import React from 'react'
 import { StoryCard } from './storyCard'
-import { BlogPost } from 'src/types/general'
-
-type StoriesProp = {
-  posts: [BlogPost]
-}
 
 
-export default function MutengaStories(props: StoriesProp) {
-    const { posts } = props
+
+export default function MutengaStories({ posts }: any) {
 
     return (
         <div className="bg-gray-50">
@@ -61,15 +56,3 @@ export default function MutengaStories(props: StoriesProp) {
 
 
 
-async function getStaticProps({params} : any){
-  const res = await fetch(`${process.env.ENDPOINT_URL}/posts`)
-  const posts = await res.json()
-
-  return {
-    props: {
-      posts: posts.data
-    }
-  }
-
-
-}
