@@ -12,9 +12,6 @@ type StoriesProp = {
 
 
 export default function Stories(props: StoriesProp) {
-
-  console.log("Stories Props: ", props)
-
   const { posts } = props
 
   return (
