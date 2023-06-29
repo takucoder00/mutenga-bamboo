@@ -1,8 +1,15 @@
 import React from 'react'
 import { StoryCard } from './storyCard'
-import { StoryDetail } from './storyDetail'
+import { BlogPost } from 'src/types/general'
 
-export default function MutengaStories() {
+type StoriesProp = {
+  posts: [BlogPost]
+}
+
+
+export default function MutengaStories(props: StoriesProp) {
+    const { posts } = props
+
     return (
         <div className="bg-gray-50">
             <div className=" px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -26,14 +33,43 @@ export default function MutengaStories() {
     Read our stories
     </p>
   </div>
+  <div className="grid max-w-screen-lg gap-8 lg:grid-cols-4 sm:mx-auto">
 
-  <StoryDetail/>
-  {/* <div className="grid max-w-screen-lg gap-8 lg:grid-cols-4 sm:mx-auto">
+    {
+      posts.map(post => {
+
+        return (
+          <StoryCard 
+              image={ process.env.STORAGE_PATH + "/" + post.image} 
+              title={post.title}/>
+        )
+
+      })
+    }
+
+
+
+
+     
       <StoryCard image={'https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80'} title={'Presidental Borehole Drilling Serivce Scheme brings clean water to chivi'}/>
       <StoryCard image={'https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80'} title={'Presidental Borehole Drilling Serivce Scheme brings clean water to chivi'}/>
-      <StoryCard image={'https://images.unsplash.com/photo-1687789256307-839c77ed376d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80'} title={'Presidental Borehole Drilling Serivce Scheme brings clean water to chivi'}/>
-  </div> */}
+  </div>
 </div>
         </div>
     )
+}
+
+
+
+async function getStaticProps({params} : any){
+  const res = await fetch(`${process.env.ENDPOINT_URL}/posts`)
+  const posts = await res.json()
+
+  return {
+    props: {
+      posts: posts.data
+    }
+  }
+
+
 }
