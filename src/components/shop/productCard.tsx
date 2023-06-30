@@ -42,6 +42,25 @@ const useStyles = createStyles((theme) => ({
 
 
 
+function buyProduct(link:string){
+
+}
+
+
+
+
+function ProductIframe({link}: {link:string}){
+
+    return (
+        <iframe className="object-cover object-center w-full h-full block" 
+        width="560" height="315" 
+        src={link} title="YouTube video player"  
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+    )
+
+}
+
+
 
 
 export function ProductCard(props: Product) {
@@ -50,7 +69,8 @@ export function ProductCard(props: Product) {
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
-        <Image src={props.image} alt="Tesla Model S" />
+        {props.image ? <Image src={props.image} alt="Tesla Model S" /> : <ProductIframe link={props.iframe} />}
+    
       </Card.Section>
 
       <Group position="apart" mt="md">
@@ -74,7 +94,7 @@ export function ProductCard(props: Product) {
             </Text>
           </div>
 
-          <Button radius="xl" style={{ flex: 1 }}>
+          <Button radius="xl" style={{ flex: 1 }} onClick={()=> { buyProduct(props.link) }}>
              Buy Now
           </Button>
         </Group>
