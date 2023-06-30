@@ -16,8 +16,9 @@ export type BlogPost = {
 
 
 export type Product = {
-    image: string;
+    image: string | null;
     name: string;
     price: string;
     link: string;
+    iframe?: any;
 }
