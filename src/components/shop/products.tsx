@@ -1,13 +1,97 @@
 import React from 'react';
 import mortar from '%PUBLIC_URL%/images/products/mortar.webp'
+import { Title } from '@mantine/core';
+import { Product } from 'src/types/general';
+import { ProductCard } from './productCard';
 
-export default function products() {
+
+let products:[Product] = [
+  {
+    "name": "Mortar and Pestle",
+    "price": "$15.00",
+    "image": "/images/products/mortar.webp",
+    "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20mortar%20and%20pestle"
+  },
+  {
+    "name": "Toothpicks",
+    "price": "$21.15",
+    "image": "/images/products/toothpic.webp",
+    "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20tooth%20pic"
+  },
+  {
+    "name": "Charcoal",
+    "price": "$12.00",
+    "image": "/images/products/charcoal.webp",
+    "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20charcoal"
+  },
+  {
+    "name": "Activated Charcoal",
+    "price": "$18.40",
+    "image": "/images/products/activated-charcoal.webp",
+    "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20activated%20charcoal"
+  },
+  {
+    "name": "Bamboo Shoots",
+    "price": "$16.00",
+    "image": "/images/products/shoots.webp",
+    "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20shoots"
+  },
+  {
+    "name": "Seedlings",
+    "price": "$21.15",
+    "image": "/images/products/seedlings.webp",
+    "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20tooth%20seedlings"
+  },
+  {
+    "name": "Culm",
+    "price": "$12.00",
+    "image": "/images/products/culm.webp",
+    "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20culms"
+  },
+  {
+    "name": "Bamboo Lathe Machine",
+    "price": "$12.00",
+    "image": "/images/products/paper.webp",
+    "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20lathe%20machine"
+  },
+  {
+    "name": "Paper",
+    "price": "$18.40",
+    "image": "/images/products/paper.webp",
+    "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20paper"
+  }
+]
+
+
+
+
+
+export default function Products() {
   return (
     <div id="products" className="products">
         <section className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
         <h1 className="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Products</h1>
       <div className="flex flex-wrap -m-4">
+
+        {
+          products.map((product: Product) => {
+
+            return (
+              <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+           <ProductCard 
+                name={product.name}
+                image={product.image}
+                price={product.price}
+                link={product.link}
+              
+
+            />
+        </div>
+            )
+
+          })
+        }
         <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
           <a target="_blank" rel="noreferrer" href="https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20intrested%20in%20bamboo%20mortar%20and%20pestle" className="block relative h-48 rounded overflow-hidden">
             <img alt="mortar and pestle" className="object-cover object-center w-full h-full block" src={"/images/products/mortar.webp"}></img>
@@ -24,7 +108,7 @@ export default function products() {
           </a>
           <div className="mt-4">
             
-            <h2 className="text-gray-900 title-font text-lg font-medium">Toothpicks</h2>
+            <Title order={4}>Toothpicks</Title>
             <p className="mt-1">$21.15</p>
           </div>
         </div>
