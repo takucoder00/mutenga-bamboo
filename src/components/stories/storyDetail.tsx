@@ -4,7 +4,13 @@ import React from "react"
 import { StoryPostBy } from "./storyPostBy"
 import { BlogPost } from "src/types/general"
 
+import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
+
 export function StoryDetail({post}: { post: BlogPost}){
+
+
+  let postContent = post.content
 
 
     return (
@@ -24,9 +30,9 @@ export function StoryDetail({post}: { post: BlogPost}){
        <Divider my="sm" />
        <Title order={1}>{ post.title }</Title>
 
-       <article className="">
-        {post.content}
-       </article>
+       <ReactMarkdown remarkPlugins={[gfm]}>
+        { postContent }
+       </ReactMarkdown>
 
          <StoryPostBy date={"16 Dec 2021"}/>
 
