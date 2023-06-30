@@ -13,4 +13,11 @@ export type BlogPost = {
     updated_at: string;
   };
 
-  
+
+
+export type Product = {
+    image: string;
+    name: string;
+    price: string;
+    link: string;
+}
