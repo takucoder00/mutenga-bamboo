@@ -64,8 +64,8 @@ export function StoryCard({ id, slug, image, title }: BadgeCardProps) {
       </Card.Section>
 
       <Group mt="xs">
-        <Button radius="lg" style={{ flex: 1 }}>
-          More...
+        <Button variant={"subtle"} className="w-full lg:mt-2 lg:ml-3 xl:mt-0 mt-3 text-green-500 border-0 py-2 px-6 focus:outline-none hover:text-green-600 rounded" radius="lg">
+          Read More...
         </Button>
         {/* <ActionIcon variant="default" radius="md" size={36}>
           <IconHeart size="1.1rem" className={classes.like} stroke={1.5} />

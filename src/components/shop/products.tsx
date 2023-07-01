@@ -78,10 +78,10 @@ export default function Products() {
       <div className="flex flex-wrap -m-4">
 
         {
-          products.map((product: Product) => {
+          products.map((product: Product, index:number) => {
 
             return (
-              <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
+              <div key={index} className="lg:w-1/4 md:w-1/2 p-4 w-full">
            <ProductCard 
                 name={product.name}
                 image={product.image}

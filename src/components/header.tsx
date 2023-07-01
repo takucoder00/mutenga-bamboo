@@ -38,18 +38,18 @@ const useStyles = createStyles((theme) => ({
     borderRadius: theme.radius.sm,
     textDecoration: 'none',
     color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
-    fontSize: theme.fontSizes.sm,
+    fontSize: theme.fontSizes.md,
     fontWeight: 500,
 
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+      backgroundColor: theme.colors.green[1],
     },
   },
 
   linkActive: {
     '&, &:hover': {
-      backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
-      color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
+      backgroundColor: theme.colors.green[2],
+      // color: theme.colors.green[6] ,
     },
   },
 }));
@@ -83,6 +83,7 @@ const Header = () => {
   const links = linksList.map((item) => (
     <a
       className={cx(classes.link, { [classes.linkActive]: active === item.label })}
+      // className="mr-5 hover:border-b-2 hover:text-green- border-green-500 px-3"
       href={item.link}
       key={item.label}
       onClick={(event) => {
@@ -123,8 +124,10 @@ const Header = () => {
             <IconArrowRight size="1.2rem" stroke={1.5} />
          
         }
+        className="inline-flex items-center bg-green-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-500 hover:text-white rounded text-base mt-4 md:mt-0"
         radius="xl"
         size="md"
+        color="dark"
         styles={{
           root: { paddingRight: rem(14), height: rem(48) },
           rightIcon: { marginLeft: rem(22) },
