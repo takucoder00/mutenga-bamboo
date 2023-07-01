@@ -38,18 +38,18 @@ const useStyles = createStyles((theme) => ({
     borderRadius: theme.radius.sm,
     textDecoration: 'none',
     color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
-    fontSize: theme.fontSizes.sm,
+    fontSize: theme.fontSizes.md,
     fontWeight: 500,
 
     '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+      backgroundColor: theme.colors.green[1],
     },
   },
 
   linkActive: {
     '&, &:hover': {
-      backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
-      color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
+      backgroundColor: theme.colors.green[2],
+      // color: theme.colors.green[6] ,
     },
   },
 }));
@@ -83,6 +83,7 @@ const Header = () => {
   const links = linksList.map((item) => (
     <a
       className={cx(classes.link, { [classes.linkActive]: active === item.label })}
+      // className="mr-5 hover:border-b-2 hover:text-green- border-green-500 px-3"
       href={item.link}
       key={item.label}
       onClick={(event) => {
