@@ -71,7 +71,7 @@ export function ProductCard(props: Product) {
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
-        {props.image ? <Image src={props.image} height={220} alt="Tesla Model S" /> : <ProductIframe link={props.iframe} />}
+        {props.image ? <Image src={props.image} height={180} alt="Tesla Model S" /> : <ProductIframe link={props.iframe} />}
     
       </Card.Section>
 
