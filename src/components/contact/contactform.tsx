@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, {useState, useEffect} from 'react'
 import { siteEndpoint } from 'src/global';
+import CustomPageTitle from '../general/CustomPageTitle';
+import { Title } from '@mantine/core';
 
 
 export default function ContactForm() {
@@ -40,11 +42,12 @@ export default function ContactForm() {
     });
   }
 
+
   
     return (
         <section className="text-gray-600 body-font relative">
-             <h1 className="text-3xl py-10 px-14  font-bold title-font text-gray-900 mb-12">Say Hello</h1>
-  <div className="container px-5 pb-24 mx-auto flex sm:flex-nowrap flex-wrap">
+             <CustomPageTitle title={"Contact Us"} />  
+      <div className="container px-5 pb-24 mx-auto flex sm:flex-nowrap flex-wrap">
 
  
     <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -63,7 +66,7 @@ export default function ContactForm() {
       </div>
     </div>
     <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-      <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+      <Title order={2}>Feedback</Title>
       <p className="leading-relaxed mb-5 text-gray-600">Do you have any question or suggestion? Say hello to Mutenga Bamboo</p>
       <div className="relative mb-4">
         <label htmlFor="topic" className="leading-7 text-sm text-gray-600">Topic</label>
