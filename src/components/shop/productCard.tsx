@@ -9,7 +9,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   imageSection: {
-    padding: theme.spacing.md,
+    // padding: theme.spacing.md,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -71,7 +71,7 @@ export function ProductCard(props: Product) {
   return (
     <Card withBorder radius="md" className={classes.card}>
       <Card.Section className={classes.imageSection}>
-        {props.image ? <Image src={props.image} alt="Tesla Model S" /> : <ProductIframe link={props.iframe} />}
+        {props.image ? <Image src={props.image} height={220} alt="Tesla Model S" /> : <ProductIframe link={props.iframe} />}
     
       </Card.Section>
 
@@ -96,7 +96,7 @@ export function ProductCard(props: Product) {
             </Text>
           </div>
 
-          <Button radius="xl" style={{ flex: 1 }} onClick={()=> { buyProduct(props.link) }}>
+          <Button className="lg:mt-2 absolute right-4  lg:ml-3 xl:mt-0 mt-3 inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded" radius="lg" onClick={()=> { buyProduct(props.link) }}>
              Buy Now
           </Button>
         </Group>
