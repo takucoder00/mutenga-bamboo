@@ -123,8 +123,10 @@ const Header = () => {
             <IconArrowRight size="1.2rem" stroke={1.5} />
          
         }
+        className="inline-flex items-center bg-green-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-500 hover:text-white rounded text-base mt-4 md:mt-0"
         radius="xl"
         size="md"
+        color="dark"
         styles={{
           root: { paddingRight: rem(14), height: rem(48) },
           rightIcon: { marginLeft: rem(22) },
