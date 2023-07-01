@@ -173,18 +173,11 @@ export default function Footer() {
     />
             </div>
 
-            <Button
-        variant="light"
-        radius="xl"
-        size="md"
-        styles={{
-          root: { paddingRight: rem(14), height: rem(48) },
-          rightIcon: { marginLeft: rem(22) },
-        }}
-        onClick={handleSubscribe}
-      >
-        Subscribe
-      </Button>
+
+
+      <Button radius="lg" style={{  width: "30%" }} onClick={handleSubscribe}>
+          Subscribe
+        </Button>
 
          
           </div>
