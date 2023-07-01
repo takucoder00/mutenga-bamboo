@@ -1,4 +1,6 @@
+import { Divider, Text, Title } from '@mantine/core'
 import React from 'react'
+
 
 export default function AboutMutengaBamboo() {
     return (
@@ -33,15 +35,15 @@ export default function AboutMutengaBamboo() {
           </div>
         </div>
         <div>
-          <h6 className="mb-2 font-semibold leading-5">
+          <Title order={4}>
             We promote rural industrialization
-          </h6>
-          <p className="text-sm text-gray-900">
+          </Title>
+          <Text>
           Mutenga Bamboo is a Zimbabwean private limited company based at Nzvimbo Growth Point
 in Chiweshe involved in bamboo and its products. The company is strategically located in
 rural Zimbabwe for the promotion of rural industrialisation.
-          </p>
-          <hr className="w-full my-6 border-gray-300" />
+          </Text>
+          <Divider className="my-6"/>
         </div>
       </div>
       <div className="flex">
@@ -51,14 +53,14 @@ rural Zimbabwe for the promotion of rural industrialisation.
           </div>
         </div>
         <div>
-          <h6 className="mb-2 font-semibold leading-5">We are environment conscious</h6>
-          <p className="text-sm text-gray-900">
+        <Title order={4}>We are environment conscious</Title>
+          <Text>
           We are an environment
 conscious company as such we chose Bamboo for it is the best plant to mitigate the effects of
 climate change. It is a sustainable plant that grows in a short space of time. It regenerates
 every year producing many shoots around it for decades.
-          </p>
-          <hr className="w-full my-6 border-gray-300" />
+          </Text>
+          <Divider className="my-6"/>
         </div>
       </div>
       <div className="flex">
@@ -68,13 +70,13 @@ every year producing many shoots around it for decades.
           </div>
         </div>
         <div>
-          <h6 className="mb-2 font-semibold leading-5">Bamboo can save the planet</h6>
-          <p className="text-sm text-gray-900">
+        <Title order={4}>Bamboo can save the planet</Title>
+          <Text>
           It is environmentally friendly as it
 produces 35% more oxygen than many trees and is a good carbon sink as its sequestration
 properties are excellent. Bamboo species range to over 1500 and bamboo has over 19 000
 uses and Mutenga Bamboo will explore ways to add value to this magic plant.
-          </p>
+          </Text>
         </div>
       </div>
     </div>

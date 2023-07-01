@@ -67,7 +67,7 @@ export default function firstHeroHome() {
 <Link href="#inspiration">
               <Button
         variant="light"
-       
+        className=' flex items-center py-2 justify-center px-8 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-2 md:text-lg md:px-5'
         radius="xl"
         size="md"
         styles={{
@@ -84,7 +84,7 @@ export default function firstHeroHome() {
                 <Link href='/contact' className="w-full flex items-center py-2 justify-center px-8  border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 md:py-2 md:text-lg md:px-5">
                 <Button
         variant="light"
-       
+       className="flex items-center py-2 justify-center px-8  border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 md:py-2 md:text-lg md:px-5"
         radius="xl"
         size="md"
         styles={{

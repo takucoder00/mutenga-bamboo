@@ -7,7 +7,65 @@ import Link from 'next/link'
 import {Button, rem, TextInput, createStyles} from '@mantine/core'
 
 
-const useStyles = createStyles((theme, { floating }) => ({
+const pageLinks = [
+  {
+    link: '/',
+    title: 'Home',
+  },
+  {
+    link: '/shop',
+    title: 'Shop',
+  },
+  {
+    link: '/stories',
+    title: 'Stories',
+  },
+  {
+    link: '/about',
+    title: 'About',
+  },
+  {
+    link: '/contact',
+    title: 'Contact',
+  },
+  {
+    link: '/terms',
+    title: 'Terms and Conditions',
+  },
+  {
+    link: '/privacy',
+    title: 'Privacy Policy',
+  },
+];
+
+let shopLinks = [
+  {
+    "link": "/shop",
+    "title": "Charcoal"
+  },
+  {
+    "link": "/shop",
+    "title": "Seedlings"
+  },
+  {
+    "link": "/shop",
+    "title": "Paper"
+  },
+  {
+    "link": "/shop",
+    "title": "Shoots"
+  },
+  {
+    "link": "/shop",
+    "title": "Toothpicks"
+  }
+]
+
+
+
+
+
+const useStyles = createStyles((theme, { floating }: any) => ({
   root: {
     position: 'relative',
   },
@@ -58,7 +116,7 @@ export default function Footer() {
     axios.defaults.withCredentials = true;
   })
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = () => {
     
 
     axios.get(siteEndpoint + 'sanctum/csrf-cookie')
@@ -92,46 +150,40 @@ export default function Footer() {
         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">LINKS</h2>
           <nav className="list-none mb-10">
-      
-            <li>
-              <Link href='/' className="text-gray-600 hover:text-gray-800">Home</Link>
-            </li>
-            <li>
-              <Link href='/stories' className="text-gray-600 hover:text-gray-800">Stories</Link>
-            </li>
-            <li>
-              <Link href="/about" className="text-gray-600 hover:text-gray-800">About</Link>
-            </li>
-            <li>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-800">Contact</Link>
-            </li>
-            
-            <li>
-              <Link href="/terms" className="text-gray-600 hover:text-gray-800">Terms and Conditions</Link>
-            </li>
-            <li>
-              <Link href="/privacy" className="text-gray-600 hover:text-gray-800">Privacy Policy</Link>
-            </li>
+
+            {
+              pageLinks.map((pageLink: {link: string; title: string}) => {
+
+                return (
+                  <li>
+                  <Link href={pageLink.link} className="">
+                    <span className="text-gray-600 hover:text-gray-800">{pageLink.title}</span></Link>
+                </li>
+                )
+
+                
+              })
+            }
           </nav>
         </div>
         <div className="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">PRODUCTS</h2>
           <nav className="list-none mb-10">
-            <li>
-              <Link href="/shop" className="text-gray-600 hover:text-gray-800">Charcoal</Link>
-            </li>
-            <li>
-              <Link href="/shop" className="text-gray-600 hover:text-gray-800">Seedlings</Link>
-            </li>
-            <li>
-              <Link href="/shop" className="text-gray-600 hover:text-gray-800">Paper</Link>
-            </li>
-            <li>
-              <Link href="/shop" className="text-gray-600 hover:text-gray-800">Shoots</Link>
-            </li>
-            <li>
-              <Link href="/shop" className="text-gray-600 hover:text-gray-800">Toothpicks</Link>
-            </li>
+
+          {
+              shopLinks.map((shopLink: {link: string; title: string}) => {
+
+                return (
+                  <li>
+                  <Link href={shopLink.link} className="">
+                    <span className="text-gray-600 hover:text-gray-800">{shopLink.title}</span></Link>
+                </li>
+                )
+
+                
+              })
+            }
+
           </nav>
         </div>
         {/* <div className="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -173,18 +225,11 @@ export default function Footer() {
     />
             </div>
 
-            <Button
-        variant="light"
-        radius="xl"
-        size="md"
-        styles={{
-          root: { paddingRight: rem(14), height: rem(48) },
-          rightIcon: { marginLeft: rem(22) },
-        }}
-        onClick={handleSubscribe}
-      >
-        Subscribe
-      </Button>
+
+
+      <Button className="lg:mt-2 lg:ml-3 xl:mt-0 mt-3 inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded" radius="lg" onClick={handleSubscribe}>
+          <span>Subscribe</span>
+        </Button>
 
          
           </div>

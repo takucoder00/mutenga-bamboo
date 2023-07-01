@@ -1,3 +1,4 @@
+import { Text, Title } from '@mantine/core'
 import React from 'react'
 
 export default function WorldBambooDay() {
@@ -33,12 +34,12 @@ World Bamboo Day is a day of celebration to increase the awareness of bamboo glo
       </div>
     </div>
     <div>
-      <h6 className="mb-2 font-semibold leading-5">
+    <Title order={4}>
       Bamboo is resilient & adaptable 
-      </h6>
-      <p className="text-sm text-gray-900">
+      </Title>
+      <Text>
       With immense biodiversity, Bamboo species can restore land. Their unique characteristics of quick growth, extensive root systems, and pioneer spirit can reduce erosion, stabilize slopes, absorb heavy metals, create shade, harbor wildlife, recycle carbon dioxide, and clean the air.
-      </p>
+      </Text>
       <hr className="w-full my-6 border-gray-300" />
     </div>
   </div>
@@ -49,10 +50,11 @@ World Bamboo Day is a day of celebration to increase the awareness of bamboo glo
       </div>
     </div>
     <div>
-      <h6 className="mb-2 font-semibold leading-5">Bamboos are Natural</h6>
-      <p className="text-sm text-gray-900">
+
+      <Title order={4}>Bamboos are Natural</Title>
+      <Text>
       Bamboos are natural flora in temperate, tropical and subtropical parts of the globe, native on every continent except Europe and Antarctica, and the latest estimates are that there may be some 50 million hectares of bamboo around the world. That’s nearly 124 million acres.
-      </p>
+      </Text>
       <hr className="w-full my-6 border-gray-300" />
     </div>
   </div>
@@ -63,13 +65,13 @@ World Bamboo Day is a day of celebration to increase the awareness of bamboo glo
       </div>
     </div>
     <div>
-      <h6 className="mb-2 font-semibold leading-5">Bamboo can save the planet</h6>
-      <p className="text-sm text-gray-900">
+    <Title order={4}>Bamboo can save the planet</Title>
+      <Text>
       It is environmentally friendly as it
 produces 35% more oxygen than many trees and is a good carbon sink as its sequestration
 properties are excellent. Bamboo species range to over 1500 and bamboo has over 19 000
 uses and Mutenga Bamboo will explore ways to add value to this magic plant.
-      </p>
+      </Text>
     </div>
   </div>
 </div>
