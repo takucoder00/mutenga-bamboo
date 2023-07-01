@@ -44,6 +44,8 @@ const useStyles = createStyles((theme) => ({
 
 function buyProduct(link:string){
 
+    window.location.href = link
+
 }
 
 
