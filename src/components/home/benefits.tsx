@@ -16,7 +16,7 @@ export default function Benefits() {
                                 <div className="grid gap-6 mt-8 sm:grid-cols-2">
                                     <div className="flex items-center space-x-6 text-gray-800 ">
                                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
 
                                         <span>CO2 Neutral</span>
@@ -24,7 +24,7 @@ export default function Benefits() {
 
                                     <div className="flex items-center space-x-6 text-gray-800 ">
                                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
 
                                         <span>Hard and Durable</span>
@@ -32,7 +32,7 @@ export default function Benefits() {
 
                                     <div className="flex items-center space-x-6 text-gray-800 ">
                                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
 
                                         <span>Healthy Choice</span>
@@ -40,7 +40,7 @@ export default function Benefits() {
 
                                     <div className="flex items-center space-x-6 text-gray-800 ">
                                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
 
                                         <span>Can last up to 30 years</span>
@@ -48,7 +48,7 @@ export default function Benefits() {
 
                                     <div className="flex items-center space-x-6 text-gray-800 ">
                                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
 
                                         <span>Natural Beauty</span>
@@ -56,7 +56,7 @@ export default function Benefits() {
 
                                     <div className="flex items-center space-x-6 text-gray-800 ">
                                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                                         </svg>
 
                                         <span>Renewable</span>
