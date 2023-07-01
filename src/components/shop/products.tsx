@@ -3,6 +3,7 @@ import mortar from '%PUBLIC_URL%/images/products/mortar.webp'
 import { Title } from '@mantine/core';
 import { Product } from 'src/types/general';
 import { ProductCard } from './productCard';
+import CustomPageTitle from '../general/CustomPageTitle';
 
 
 let products:Product[] = [
@@ -72,7 +73,8 @@ export default function Products() {
     <div id="products" className="products">
         <section className="text-gray-600 body-font">
     <div className="container px-5 py-24 mx-auto">
-        <h1 className="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Products</h1>
+
+       <CustomPageTitle title={"Products"} />
       <div className="flex flex-wrap -m-4">
 
         {
