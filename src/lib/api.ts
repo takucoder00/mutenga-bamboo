@@ -1,8 +1,9 @@
+import {  siteEndpoint } from './../global';
 import axios from 'axios'
 
 const api = axios.create(
   {
-    baseURL: process.env.API_BASE_URL, //set the base url on .env file
+    baseURL: siteEndpoint, //set the base url on .env file
     timeout: 5000
   }
 )

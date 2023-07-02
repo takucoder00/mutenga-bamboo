@@ -1,23 +1,33 @@
 
 Upgrade to TailwindCSS 3
 --------------------------
-- Check upgrade guide for tailwindcss 3
-- Check the codebase to see how it was build
-- Try to estimate the possible work needed to ugrade 
+- Check upgrade guide for tailwindcss 3 - Done
+- Check the codebase to see how it was build - Done
+- Try to estimate the possible work needed to ugrade - DOne
 
 Stories
 -----------
-- Add stories cards 
-- Add stories page 
-- Add story details page 
+- Add stories cards - Done
+- Add stories page - Done 
+- Add story details page - Done
 
 
 API 
 -------
-- Create functions to read blogs
-- Create function to read blog
+- Create functions to read blogs - Done
+- Create function to read blog - Done
 
 Upgrade to Next JS 12
 -----------------------
-- How to upgrade  from CRA to Next 
-- Check installation guide
+- How to upgrade  from CRA to Next - Done
+- Check installation guide - Done
+
+
+
+Odds and endless
+-----------------
+- Correct post width and height in posts
+- Add subscribe model
+- Add subscribe logic 
+- Add contact table 
+- Add contact logic 

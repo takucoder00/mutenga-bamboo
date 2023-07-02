@@ -1,7 +1,7 @@
 import { useEffect, Fragment } from 'react';
 import { useRouter } from 'next/router';
 
-function ScrollToTop({ children }) {
+function ScrollToTop({ children }: any) {
   const router = useRouter();
 
   useEffect(() => {
