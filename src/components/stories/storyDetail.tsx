@@ -7,6 +7,7 @@ import { BlogPost } from "src/types/general"
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import { storageEndpoint } from "src/global"
+import { formatPostDate } from "src/utils/general"
 
 export function StoryDetail({post}: { post: BlogPost}){
 
@@ -41,7 +42,7 @@ export function StoryDetail({post}: { post: BlogPost}){
         { postContent }
        </ReactMarkdown>
 
-         <StoryPostBy date={"16 Dec 2021"}/>
+         <StoryPostBy date={formatPostDate(post.updated_at)}/>
 
        </div>
 
