@@ -7,6 +7,7 @@ import { BlogPost } from "src/types/general"
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import { storageEndpoint } from "src/global"
+import { formatPostDate } from "src/utils/general"
 
 export function StoryDetail({post}: { post: BlogPost}){
 
@@ -31,7 +32,7 @@ export function StoryDetail({post}: { post: BlogPost}){
        />
 
 <p className="text-sm text-gray-400"> by <a rel="noopener noreferrer" href="#" target="_blank" className="underline text-green-400">
-      <span itemProp="name">Mutenga Bamboo</span></a> on <time dateTime="2021-02-12 15:34:18-0200">Feb 12th 2021</time></p>
+      <span itemProp="name">Mutenga Bamboo</span></a> on <time dateTime={post.updated_at}>{formatPostDate(post.updated_at)}</time></p>
 
        
        <Divider my="sm" />
@@ -41,7 +42,7 @@ export function StoryDetail({post}: { post: BlogPost}){
         { postContent }
        </ReactMarkdown>
 
-         <StoryPostBy date={"16 Dec 2021"}/>
+         <StoryPostBy date={formatPostDate(post.updated_at)}/>
 
        </div>
 
