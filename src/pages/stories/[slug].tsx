@@ -23,14 +23,14 @@ export async function getStaticPaths() {
     const res = await fetch(`${apiEndpoint}/posts`)
     const posts = await res.json()
 
-    console.log("Posts: ", posts)
+    // console.log("Posts: ", posts)
 
     // Get the ways we need to pre-render in light of posts
     const paths = posts.data.map((post: BlogPost) => ({
         params: { slug: post.slug },
     }))
 
-    console.log("Paths: ", paths)
+    // console.log("Paths: ", paths)
  
     // We'll pre-render just these ways at assemble time.
     return { paths, fallback:true }
