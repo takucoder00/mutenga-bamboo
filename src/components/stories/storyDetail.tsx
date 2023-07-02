@@ -6,6 +6,7 @@ import { BlogPost } from "src/types/general"
 
 import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
+import { storageEndpoint } from "src/global"
 
 export function StoryDetail({post}: { post: BlogPost}){
 
@@ -19,7 +20,7 @@ export function StoryDetail({post}: { post: BlogPost}){
      <div className="max-w-6xl px-6 pt-6 pb-24 mx-auto space-y-12">
 
      <Image 
-       src={`${process.env.STORAGE_PATH}/${post.image}`} 
+       src={`${storageEndpoint}/${post.image}`} 
        height={420}
        />
 

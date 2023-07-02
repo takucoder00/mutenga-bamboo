@@ -2,6 +2,7 @@ import React from 'react'
 import { StoryCard } from './storyCard'
 import { BlogPost } from 'src/types/general'
 import CustomPageTitle from '../general/CustomPageTitle'
+import { storageEndpoint } from 'src/global'
 
 
 export default function MutengaStories({ posts }: any) {
@@ -25,7 +26,7 @@ export default function MutengaStories({ posts }: any) {
           <StoryCard 
               id={post.id}
               slug={post.slug}
-              image={ process.env.STORAGE_PATH + "/" + post.image} 
+              image={ storageEndpoint + "/" + post.image} 
               title={post.title}/>
         )
 

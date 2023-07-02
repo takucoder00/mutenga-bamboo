@@ -106,6 +106,7 @@ const Header = () => {
               <AppLogo />
                 <span className="ml-3 text-xl text-green-500">Mutenga Bamboo</span>
               </a>
+              
               <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 
 
