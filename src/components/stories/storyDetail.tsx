@@ -11,6 +11,12 @@ import { storageEndpoint } from "src/global"
 export function StoryDetail({post}: { post: BlogPost}){
 
 
+
+
+  if (!post) return (<></>)
+
+
+
   let postContent = post.content
 
 

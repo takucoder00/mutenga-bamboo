@@ -10,7 +10,7 @@ const app = next({ dev, hostname, port })
 const handle = app.getRequestHandler()
  
 app.prepare().then(() => {
-  createServer(async (req: any, res:any) => {
+  createServer(async (req, res) => {
     try {
       // Be sure to pass `true` as the second argument to `url.parse`.
       // This tells it to parse the query portion of the URL.
@@ -30,7 +30,7 @@ app.prepare().then(() => {
       res.end('internal server error')
     }
   })
-    .once('error', (err: Error) => {
+    .once('error', (err) => {
       console.error(err)
       process.exit(1)
     })
@@ -38,6 +38,3 @@ app.prepare().then(() => {
       console.log(`> Ready on http://${hostname}:${port}`)
     })
 })
-
-
-export {}
