@@ -1,0 +1,26 @@
+import { Title } from '@mantine/core';
+import React from 'react';
+
+export default function SiteVisit() {
+  return (
+    <>
+    <section className="text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="flex flex-col text-center w-full mb-20">
+    
+      {/* <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Site Visit</h1> */}
+      <Title color="dark">Site Visit</Title>
+      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Checkout our Mutenga Bamboo site</p>
+    </div>
+    <div className="flex flex-wrap -m-2 px-16">
+      
+
+
+      <iframe width="100%" height="500rem" src="https://www.youtube.com/watch?v=Vdlbi_Se_ps"></iframe>
+ 
+    </div>
+  </div>
+</section>
+    </>
+  );
+}
