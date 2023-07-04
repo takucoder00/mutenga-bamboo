@@ -12,46 +12,55 @@ export default function OurTeam() {
     <div className="flex flex-wrap -m-2">
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={process.env.PUBLIC_URL + '/images/team/1.jpeg'}/>
+          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={'/images/team/1.jpeg'}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Rowen Meda</h2>
-            <p className="text-gray-500">CEO and Founder</p>
+            <p className="text-gray-500  relative bottom-4">CEO and Founder</p>
           </div>
         </div>
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={process.env.PUBLIC_URL + '/images/team/5.jpeg'}/>
+          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={'/images/team/5.jpeg'}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Farai Musendo</h2>
-            <p className="text-gray-500">Co Founder</p>
+            <p className="text-gray-500  relative bottom-4">Co Founder</p>
           </div>
         </div>
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={process.env.PUBLIC_URL + '/images/team/4.jpeg'}/>
+          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={'/images/team/4.jpeg'}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Lianda Meda</h2>
-            <p className="text-gray-500">Director</p>
+            <p className="text-gray-500  relative bottom-4">Director</p>
           </div>
         </div>
       </div>
-      <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      {/* <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={process.env.PUBLIC_URL + '/images/team/2.jpeg'}/>
+          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={'/images/team/2.jpeg'}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Beauty Chinyuku</h2>
             <p className="text-gray-500">Accountant</p>
           </div>
         </div>
+      </div> */}
+      <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={'/images/team/placeholder.png'}/>
+          <div className="flex-grow">
+            <h2 className="text-gray-900 title-font font-medium">Denilson Chinyuku</h2>
+            <p className="text-gray-500 relative bottom-4">Production Engineering Mananger</p>
+          </div>
+        </div>
       </div>
       <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={process.env.PUBLIC_URL + '/images/team/3.jpeg'}/>
+          <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={'/images/team/3.jpeg'}/>
           <div className="flex-grow">
             <h2 className="text-gray-900 title-font font-medium">Gamuchirai Taruwona</h2>
-            <p className="text-gray-500">Enviromentalist</p>
+            <p className="text-gray-500  relative bottom-4">Enviromentalist</p>
           </div>
         </div>
       </div>
