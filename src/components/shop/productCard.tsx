@@ -64,7 +64,7 @@ function ProductIframe({link}: {link:string}){
         <iframe className="object-cover object-center w-full h-full block" 
         width="560" height="315"  
         // width="100%" height="600rem" 
-        src={link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        src={link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  
     )
 
