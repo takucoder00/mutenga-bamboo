@@ -29,5 +29,7 @@ Odds and endless
 - Correct post width and height in posts
 - Add subscribe model
 - Add subscribe logic 
+- Send subscribe email
 - Add contact table 
 - Add contact logic 
+- Send contact email
