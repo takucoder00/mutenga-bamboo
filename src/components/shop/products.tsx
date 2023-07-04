@@ -53,7 +53,7 @@ let products:Product[] = [
     "name": "Bamboo Lathe Machine",
     "price": "$12.00",
     "image": null,
-    "iframe": "https://www.youtube-nocookie.com/embed/iRD6ovBfBLw?controls=0",
+    "iframe": "https://youtube.com/shorts/iRD6ovBfBLw?feature=share",
     "link": "https://wa.me/263774354222?text=Hello%20Mutenga%20Bamboo%2C%20i%20am%20interested%20in%20bamboo%20lathe%20machine"
   },
   {
