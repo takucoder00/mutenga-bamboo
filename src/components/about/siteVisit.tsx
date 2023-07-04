@@ -14,9 +14,7 @@ export default function SiteVisit() {
     </div>
     <div className="flex flex-wrap -m-2 px-16">
       
-
-
-      <iframe width="100%" height="500rem" src="https://www.youtube.com/watch?v=Vdlbi_Se_ps"></iframe>
+      <iframe width="100%" height="600rem" src="https://www.youtube.com/embed/Vdlbi_Se_ps" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  
     </div>
   </div>
