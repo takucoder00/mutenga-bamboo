@@ -1,5 +1,5 @@
 import Base from "@/pages/base"
-import { Image, Title, Divider, Text } from "@mantine/core"
+import {  Image, Title, Divider, Text } from "@mantine/core"
 import React from "react"
 import { StoryPostBy } from "./storyPostBy"
 import { BlogPost } from "src/types/general"
@@ -8,6 +8,7 @@ import ReactMarkdown from 'react-markdown';
 import gfm from 'remark-gfm';
 import { storageEndpoint } from "src/global"
 import { formatPostDate } from "src/utils/general"
+
 
 export function StoryDetail({post}: { post: BlogPost}){
 
@@ -26,9 +27,11 @@ export function StoryDetail({post}: { post: BlogPost}){
 
      <div className="max-w-6xl px-6 pt-6 pb-24 mx-auto space-y-12">
 
-     <Image 
+     <Image
        src={`${storageEndpoint}/${post.image}`} 
-       height={420}
+       height={"100%"}
+       width={"100%"}
+
        />
 
 <p className="text-sm text-gray-400"> by <a rel="noopener noreferrer" href="#" target="_blank" className="underline text-green-400">

@@ -44,7 +44,8 @@ function StoryDetail({ post  }) {
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_2__.Image, {
                     src: `${src_global__WEBPACK_IMPORTED_MODULE_7__/* .storageEndpoint */ .ns}/${post.image}`,
-                    height: 420
+                    height: "100%",
+                    width: "100%"
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
                     className: "text-sm text-gray-400",

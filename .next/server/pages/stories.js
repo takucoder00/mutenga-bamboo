@@ -75,6 +75,7 @@ const useStyles = (0,core_.createStyles)((theme)=>({
     }));
 function StoryCard({ id , slug , image , title  }) {
     const { classes , theme  } = useStyles();
+    let threeDots = title.length > 60 ? "..." : "";
     return /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
         href: `/stories/${slug}`,
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Card, {
@@ -97,7 +98,7 @@ function StoryCard({ id , slug , image , title  }) {
                         position: "apart",
                         children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Title, {
                             order: 4,
-                            children: title
+                            children: title.substring(0, 60) + threeDots
                         })
                     })
                 }),
