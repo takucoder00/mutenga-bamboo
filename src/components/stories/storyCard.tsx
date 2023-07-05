@@ -48,6 +48,8 @@ interface BadgeCardProps {
 export function StoryCard({ id, slug, image, title }: BadgeCardProps) {
   const { classes, theme } = useStyles();
 
+  let threeDots = title.length > 60 ? "..." : ""
+
   return (
     <Link href={`/stories/${slug}`}>
       <Card withBorder radius="md" p="md" className={classes.card}>
@@ -58,7 +60,7 @@ export function StoryCard({ id, slug, image, title }: BadgeCardProps) {
       <Card.Section className={classes.section} mt="md">
         <Group position="apart">
           <Title order={4}>
-            {title}
+            {title.substring(0, 60) + threeDots}
           </Title>
         </Group>
       </Card.Section>

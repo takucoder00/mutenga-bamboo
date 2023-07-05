@@ -11,7 +11,7 @@
   "/privacy": "pages/privacy.html",
   "/shop": "pages/shop.html",
   "/terms": "pages/terms.html",
-  "/stories/[slug]": "pages/stories/[slug].js",
   "/stories": "pages/stories.js",
+  "/stories/[slug]": "pages/stories/[slug].js",
   "/404": "pages/404.html"
 }
