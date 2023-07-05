@@ -2,16 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/about": "pages/about.html",
-  "/api/hello": "pages/api/hello.js",
-  "/base": "pages/base.html",
-  "/celebrations": "pages/celebrations.html",
-  "/contact": "pages/contact.html",
-  "/": "pages/index.html",
-  "/privacy": "pages/privacy.html",
-  "/shop": "pages/shop.html",
-  "/terms": "pages/terms.html",
-  "/stories": "pages/stories.js",
   "/stories/[slug]": "pages/stories/[slug].js",
-  "/404": "pages/404.html"
+  "/stories": "pages/stories.js",
+  "/": "pages/index.js"
 }
