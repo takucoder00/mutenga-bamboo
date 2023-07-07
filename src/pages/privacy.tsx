@@ -31,7 +31,7 @@ export default function Privacy() {
                             number, personal messages etc., we store this data in our CMS &amp; CRM systems. We use this
                             data to provide the requested service (e.g. sending requested information). In order to
                             answer your request, depending on the region where you live, we might send your data to one
-                            of our distributors for follow-up. After your consent to receive newsletters, MOSO stores
+                            of our distributors for follow-up. After your consent to receive newsletters, Mutenga Bamboo stores
                             this data for the purpose of personalizing and making relevant content for the newsletters.
                             We store this data in our email newsletter software and CRM system.</p>
                         <p className="text-align-center">Without your express consent, your personal data will only be

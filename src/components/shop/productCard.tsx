@@ -100,7 +100,7 @@ export function ProductCard(props: Product) {
               {props.price}
             </Text>
             <Text fz="sm" c="dimmed" fw={500} sx={{ lineHeight: 1 }} mt={3}>
-              per day
+              
             </Text>
           </div>
 
