@@ -52,7 +52,7 @@ export default function OurTeam() {
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <img alt="team" className="w-16 h-16 bg-gray-100 object-cover object-center shrink-0 rounded-full mr-4" src={'/images/team/placeholder.png'}/>
           <div className="flex-grow">
-            <h2 className="text-gray-900 title-font font-medium">Denilson Chinyuku</h2>
+            <h2 className="text-gray-900 title-font font-medium">Denilson Mutasa</h2>
             <p className="text-gray-500 relative bottom-4">Production Engineering Mananger</p>
           </div>
         </div>
